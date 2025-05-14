@@ -3,6 +3,8 @@
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+from datetime import timedelta
+
 from urllib.parse import urlparse
 load_dotenv()
 
@@ -35,6 +37,7 @@ INSTALLED_APPS = [
     'accounts',
     'service_requests',
     'drf_spectacular',
+    'django_filters',
 ]
 
 

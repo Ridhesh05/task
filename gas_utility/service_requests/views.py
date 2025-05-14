@@ -1,7 +1,8 @@
 from django.shortcuts import get_object_or_404
-from rest_framework import generics, permissions, status, viewsets, filters
+from rest_framework import generics,permissions, status, viewsets, filters
 from rest_framework.response import Response
 from rest_framework.decorators import action
+from gas_utility import settings
 from django_filters.rest_framework import DjangoFilterBackend
 from .models import (
     ServiceRequestCategory, ServiceRequest, 
