@@ -16,12 +16,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-0m&du-zwi#tc_42o(=kb6+0*r=wk4_ru6k!v-yfj3r7i6w8pm#'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -71,8 +71,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'gas_utility.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 DATABASE_URL = os.getenv('DATABASE_URL', 'postgresql://task_i01w_user:q4l3qYrvHuBUOOJvIvlaxsytIFITnf4X@dpg-d0i2r3emcj7s739l1eig-a.oregon-postgres.render.com/task_i01w')
 
 url = urlparse(DATABASE_URL)
@@ -88,8 +86,6 @@ DATABASES = {
     }
 }
 
-# Password validation
-# https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
