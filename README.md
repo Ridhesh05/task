@@ -1,6 +1,6 @@
-🔧 Gas Utility Consumer Service API
+## 🔧 Gas Utility Consumer Service API
 
-Key Features
+# Key Features
 RESTful APIs: Built API-first to support access from any device — web or mobile — via standard HTTP requests.
 
 Databse : Postgressql 
@@ -11,7 +11,7 @@ Implemented pagination to reduce response payloads.
 
 Used select_related and prefetch_related to optimize database query performance.
 
-Containerization with Docker:
+# Containerization with Docker:
 
 Dockerized the entire application to simplify development, deployment, and environment consistency.
 
@@ -21,8 +21,8 @@ Unit Testing:
 
 Added unit tests in the accounts module to ensure code reliability and correctness.
 
-
-🐳 Docker Setup
+ 
+## 🐳 Docker Setup
 To run the application in a Docker container:
 docker-compose up --build
 
