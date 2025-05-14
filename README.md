@@ -24,13 +24,14 @@ Added unit tests in the accounts module to ensure code reliability and correctne
  
 ## 🐳 Docker Setup
 To run the application in a Docker container:
-docker-compose up --build
+#docker-compose up --build
 
-Future Scalability
+##Future Scalability
 With Docker already in place, the system is ready to be deployed on Kubernetes (K8s) for horizontal scaling and microservices orchestration.
 
 The API-centric architecture ensures seamless integration with modern frontends or third-party services.
 
+#
 Run testing with : 
 python manage.py test
 Unit tests are currently implemented in the accounts app, ensuring robust user-related logic.
